@@ -1,1 +1,29 @@
-
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестовая кнопка</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="openWebhook()">Тест</button>
+    <script>
+        function openWebhook() {
+            window.open('https://n8n.zvq.me/webhook-test/536c81f6-21a5-484c-af97-81b82fd96235', '_blank');
+        }
+    </script>
+</body>
+</html>
