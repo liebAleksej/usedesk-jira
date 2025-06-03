@@ -19,10 +19,15 @@
     </style>
 </head>
 <body>
-    <button onclick="openWebhook()">Тест</button>
+    <button onclick="openAndCloseWebhook()">Тест</button>
     <script>
-        function openWebhook() {
-            window.open('https://n8n.zvq.me/webhook-test/536c81f6-21a5-484c-af97-81b82fd96235', '_blank');
+        function openAndCloseWebhook() {
+            const newTab = window.open('https://n8n.zvq.me/webhook-test/536c81f6-21a5-484c-af97-81b82fd96235', '_blank');
+            if (newTab) {
+                setTimeout(() => {
+                    newTab.close();
+                }, 1000); // Закрытие вкладки через 1 секунду
+            }
         }
     </script>
 </body>
